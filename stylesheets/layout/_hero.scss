@@ -1,0 +1,45 @@
+.main-screen {
+  min-height: 100vh;
+  background-color: #000;
+  background-image: url(../../images/bg-day.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*
+<!-- SVG References -->
+<svg class="icon">
+  <use xlink:href="#sun"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#arrow-down"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#moon"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#quote"></use>
+</svg>
+
+
+
+#arrow-down {
+  stroke: red;
+  fill: none;
+}
+*/
+
+.icon {
+  width: 17px;
+  height: 17px;
+  fill: $white;
+  margin-top: 5px;
+}
+
+.top-random-phrase {
+	display: flex;
+	align-items: start;
+}

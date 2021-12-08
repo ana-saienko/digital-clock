@@ -14,24 +14,19 @@ html {
 // main styles for the layout
 
 body {
-	&.lock {
-		overflow: hidden;
-	}
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $black;
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 .container {
-	max-width: $maxWidthContainer + px;
-	margin: 0 auto;
-	@media (max-width: $md1+px) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2+px) {
-		max-width: 750px;
-	}
-	@media (max-width: $md3+px) {
-		max-width: none;
-		padding: 0 10px;
-	}
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  padding: 56px 15px 98px 15px;
 }
-
-
