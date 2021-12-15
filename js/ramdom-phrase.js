@@ -11,6 +11,7 @@ function generateJoke() {
                     return response.json();
                 })
                 .then(function(data) {
-                    quoteEl.innerHTML = data.text;
+                    console.log(data);
                   });
 }
+

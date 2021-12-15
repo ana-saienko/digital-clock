@@ -1,0 +1,38 @@
+.main-clock__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+}
+.main-clock__digits {
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 200px;
+  letter-spacing: -5px;
+  color: #ffffff;
+
+  span {
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 28px;
+  }
+}
+
+.main-clock {
+	text-align: left;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	flex-grow: 1;
+}
+
+.main-clock__icon {
+	width: 24px;
+	height: 24px;
+	fill: #fff;
+}
