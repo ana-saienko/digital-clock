@@ -1,47 +1,16 @@
- var quotes = [
-    [
-        "Благородные люди, друг друга любя,      \
-        Видят горе других, забывают себя.        \
-        Если чести и блеска зеркал ты желаешь, — \
-        Не завидуй другим, — и возлюбят тебя.",
+const quoteEl = document.getElementById('phrase')
+const nextBtn = document.getElementById('next-quote')
 
-        "Омар Хайям"
-    ],
+generateJoke();
 
-    [
-        "Добродетель мудрецов напоминает собой путешествие в дальннюю страну \
-        и восхождение на вершину: идущие                                     \
-        в дальнюю страну начинают свой путь с первого шага;                  \
-        восходящие на вершину начинают с подножия горы.",
+function generateJoke() {
 
-        "Конфуций"
-    ],
 
-    [
-        "Если вы хотите успеха, а готовитесь к поражению, то вы получите как раз то, к чему готовитесь.",
-
-        "Флоренс Шин"
-    ],
-
-    [
-        "Мы – рабы своих привычек. измени свои привычки, изменится твоя жизнь.",
-
-        "Роберт Кийосаки"
-    ]
-];
-
-document.getElementById("next-quote").addEventListener("click", function() {
-   
-    // выбираем случайную фразу из массива
-    // данные в массив могут попадать и через api
-    var quote = quotes[ Math.floor( Math.random() * quotes.length ) ];
-
-    // цитата
-    var phrase = document.querySelector("#phrase");
-   
-    // автор
-    var author = document.querySelector("#author");
-
-    phrase.innerHTML = quote[0];
-    author.innerHTML = quote[1];  
-});
+    fetch("https://type.fit/api/quotes")
+          .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    quoteEl.innerHTML = data.text;
+                  });
+}
