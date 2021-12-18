@@ -20,6 +20,12 @@ body {
   line-height: 28px;
   color: $black;
 
+  min-height: 100vh;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
   &.lock {
     overflow: hidden;
   }

@@ -99,6 +99,11 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: #000000;
+  min-height: 100vh;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 body.lock {
@@ -124,15 +129,6 @@ body.lock {
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-.main-screen {
-  min-height: 100vh;
-  background-color: #000;
-  background-image: url(../../images/bg-day.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 /*
