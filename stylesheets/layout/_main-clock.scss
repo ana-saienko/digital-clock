@@ -14,11 +14,14 @@
   letter-spacing: -5px;
   color: #ffffff;
 
-  span {
+}
+
+#timezone {
 	font-weight: 300;
 	font-size: 40px;
 	line-height: 28px;
-  }
+  color: #ffffff;
+  transform: translateY(-23px);
 }
 
 .main-clock {
@@ -35,4 +38,13 @@
 	width: 24px;
 	height: 24px;
 	fill: #fff;
+}
+
+.clock {
+  display: flex;
+  align-items: flex-end;
+}
+
+.clocks {
+  margin-top: 30%;
 }

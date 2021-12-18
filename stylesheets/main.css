@@ -109,6 +109,7 @@ body.lock {
   max-width: 1440px;
   margin: 0 auto;
   padding: 56px 15px 98px 15px;
+  min-height: 100vh;
 }
 
 /**
@@ -193,10 +194,13 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   color: #ffffff;
 }
 
-.main-clock__digits span {
+#timezone {
   font-weight: 300;
   font-size: 40px;
   line-height: 28px;
+  color: #ffffff;
+  -webkit-transform: translateY(-23px);
+          transform: translateY(-23px);
 }
 
 .main-clock {
@@ -223,6 +227,19 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   width: 24px;
   height: 24px;
   fill: #fff;
+}
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.clocks {
+  margin-top: 30%;
 }
 
 #random-phrase {

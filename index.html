@@ -5,9 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="stylesheets/main.css" />
 
@@ -16,36 +19,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-
     <div class="main-screen">
       <div class="container">
         <div class="top-random-phrase">
           <div id="random-phrase">
-            <div id="phrase">“The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.”</div>
+            <div id="phrase">
+              “The science of operations, as derived from mathematics more
+              especially, is a science of itself, and has its own abstract truth
+              and value.”
+            </div>
             <div id="author">Ada Lovelace</div>
-        </div>
-        <button id="next-quote">
-          <svg class="icon">
-            <use xlink:href="sprite.svg#quote"></use>
-          </svg>
-        </button>
-        </div>
-
-        <div class="main-clock">
-          <h4 class="main-clock__title" id="main-clock__title">
-            <svg class="main-clock__icon">
-              <use xlink:href="sprite.svg#sun"></use>
+          </div>
+          <button id="next-quote">
+            <svg class="icon">
+              <use xlink:href="sprite.svg#quote"></use>
             </svg>
-            GOOD MORNING, IT’S CURRENTLY</h4>
-          <div class="main-clock__digits" id="main-clock__digits">11:37 <span id="timezone">BTN</span> </div>
+          </button>
         </div>
+
+        <div class="clocks">
+
+          <div class="main-clock">
+            <h4 class="main-clock__title" id="main-clock__title">
+              <svg class="main-clock__icon">
+                <use xlink:href="sprite.svg#sun"></use>
+              </svg>
+              GOOD MORNING, IT’S CURRENTLY
+            </h4>
+          </div>
+  
+          <div class="clock">
+            <p class="main-clock__digits">
+              <span id="h0">0</span><span id="h1">0</span>:<span id="m0">0</span
+              ><span id="m1">0</span>
+            </p>
+            <span id="timezone">BST</span>
+          </div>
+          
+        </div>
+
+
       </div>
-
-
     </div>
 
-
     <script src="js/ramdom-phrase.js"></script>
+    <script src="js/digital-clock.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
