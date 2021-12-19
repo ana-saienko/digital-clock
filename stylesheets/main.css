@@ -113,7 +113,6 @@ body.lock {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 56px 15px 98px 15px;
   min-height: 100vh;
 }
 
@@ -171,6 +170,13 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  padding: 56px 0;
+}
+
+@media (max-width: 767.98px) {
+  .top-random-phrase {
+    padding: 80px 131px 80px 64px;
+  }
 }
 
 .main-clock__title {
@@ -182,12 +188,24 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   color: #ffffff;
 }
 
+@media (max-width: 767.98px) {
+  .main-clock__title {
+    font-size: 18px;
+  }
+}
+
 .main-clock__digits {
   font-weight: 700;
   font-size: 200px;
   line-height: 200px;
   letter-spacing: -5px;
   color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+  .main-clock__digits {
+    font-size: 175px;
+  }
 }
 
 #timezone {
@@ -197,6 +215,12 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   color: #ffffff;
   -webkit-transform: translateY(-23px);
           transform: translateY(-23px);
+}
+
+@media (max-width: 767.98px) {
+  #timezone {
+    font-size: 32px;
+  }
 }
 
 .main-clock {
@@ -235,7 +259,13 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
 }
 
 .clocks {
-  margin-top: 30%;
+  margin-top: 14%;
+}
+
+@media (max-width: 767.98px) {
+  .clocks {
+    padding: 0 64px;
+  }
 }
 
 .main-clock__title {

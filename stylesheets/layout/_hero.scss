@@ -38,4 +38,9 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
 .top-random-phrase {
 	display: flex;
 	align-items: start;
+  padding: 56px 0;
+
+  @media (max-width:$md3+px){
+     padding: 80px 131px 80px 64px; 
+  }
 }

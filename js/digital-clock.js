@@ -36,6 +36,7 @@ var ft = now.toLocaleString("en-US", {
 	 minute: "numeric",
 	 hour12: true
 });
+var currentTimeZoneOffsetInHours = now.getTimezoneOffset() / 60;
 if (6 <= hours && hours < 10) {//Morning
 	 document.write('<body style="background-image: url(images/bg-day.jpg)">');
    var svgIcon = "#sun";
@@ -57,6 +58,7 @@ if (22 <= hours && hours < 6) {//Night
 	 var type = "Good night";
 }
 document.getElementById("main-clock__title").innerHTML = `<svg class="icon"><use xlink:href="sprite.svg${svgIcon}"></use></svg> ${type}, IT’S CURRENTLY`;
+document.getElementById("timezone").innerHTML = `UTC${currentTimeZoneOffsetInHours}`;
 
 
 //CSS gradient backgrounds from https://uigradients.com
@@ -65,3 +67,5 @@ document.getElementById("main-clock__title").innerHTML = `<svg class="icon"><use
 // const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 // console.log(timezone);
 
+// var x = new Date();
+// var currentTimeZoneOffsetInHours = x.getTimezoneOffset() / 60;

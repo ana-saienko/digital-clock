@@ -5,6 +5,10 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (max-width:$md3+px){
+     font-size: 18px; 
+  }
   
 }
 .main-clock__digits {
@@ -13,7 +17,9 @@
   line-height: 200px;
   letter-spacing: -5px;
   color: #ffffff;
-
+  @media (max-width:$md3+px){
+     font-size: 175px; 
+  }
 }
 
 #timezone {
@@ -22,6 +28,10 @@
 	line-height: 28px;
   color: #ffffff;
   transform: translateY(-23px);
+
+  @media (max-width:$md3+px){
+     font-size: 32px; 
+  }
 }
 
 .main-clock {
@@ -46,7 +56,11 @@
 }
 
 .clocks {
-  margin-top: 30%;
+  margin-top: 14%;
+
+  @media (max-width:$md3+px){
+     padding: 0 64px; 
+  }
 }
 
 .main-clock__title {
