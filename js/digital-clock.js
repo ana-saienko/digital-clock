@@ -27,6 +27,8 @@ function setTime(){
 
 // --------------------------------------------------------------
 
+var svgTitle = document.getElementsByClassName("main-clock__title");
+
 var now = new Date();
 var hours = now.getHours();
 var ft = now.toLocaleString("en-US", {
@@ -36,20 +38,30 @@ var ft = now.toLocaleString("en-US", {
 });
 if (6 <= hours && hours < 10) {//Morning
 	 document.write('<body style="background-image: url(../images/bg-day.jpg)">');
+   var svgIcon = "#sun";
 	 var type = "Good Morning";
 }
 if (10 <= hours && hours < 16) {//Day
 	 document.write('<body style="background-image: url(../images/bg-day.jpg)">');
+   var svgIcon = "#sun";
 	 var type = "Good day";
 }
 if (16 <= hours && hours < 22) {//Evening
 	 document.write('<body style="background-image: url(../images/bg-night.jpg)">');
+   var svgIcon = "#moon";
 	 var type = "Good Evening";
 }
 if (22 <= hours && hours < 6) {//Night
 	 document.write('<body style="background-image: url(../images/bg-night.jpg)">');
+   var svgIcon = "#moon";
 	 var type = "Good night";
 }
-document.getElementById("main-clock__title").innerHTML = `${type}, IT’S CURRENTLY`;
+document.getElementById("main-clock__title").innerHTML = `<svg class="icon"><use xlink:href="sprite.svg${svgIcon}"></use></svg> ${type}, IT’S CURRENTLY`;
+
+
 //CSS gradient backgrounds from https://uigradients.com
 // https://write.corbpie.com/change-background-and-text-based-on-time-with-javascript/
+
+// const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+// console.log(timezone);
+
