@@ -47,3 +47,6 @@ randomQuote();
 
 document.getElementById("next-quote").addEventListener('click', randomQuote);
 
+this.setInterval(function(){
+	randomQuote();
+ },100000);
