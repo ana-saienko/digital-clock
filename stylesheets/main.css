@@ -250,16 +250,18 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   max-width: 580px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  min-height: 150px;
+  min-width: 580px;
 }
 
-#random-phrase #phrase {
+#random-phrase #quotation {
   text-align: left;
   margin-bottom: 15px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
-#random-phrase #author {
+#random-phrase #source {
   font-weight: 700;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;

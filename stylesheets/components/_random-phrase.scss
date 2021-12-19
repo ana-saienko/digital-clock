@@ -5,15 +5,18 @@
   color: $white;
   max-width: 580px;
   transition: all .3s ease-in-out;
+
+  min-height: 150px;
+  min-width: 580px;
 }
 
-#random-phrase #phrase {
+#random-phrase #quotation {
   text-align: left;
   margin-bottom: 15px;
   transition: all .3s ease-in-out;
 }
 
-#random-phrase #author {
+#random-phrase #source {
   font-weight: 700;
   transition: all .3s ease-in-out;
 }
