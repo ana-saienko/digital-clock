@@ -1,0 +1,42 @@
+.modal__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(40.7742px);
+  padding: 74px 165px 32px;
+}
+
+.modal__left {
+  padding-right: 148px;
+  border-right: 1px solid #b5b8ba;
+}
+
+.modal__right {
+  padding-left: 94px;
+}
+
+.modal__subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 9px;
+}
+
+.modal__info {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  color: #303030;
+  margin-bottom: 42px;
+}

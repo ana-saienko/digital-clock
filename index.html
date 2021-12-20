@@ -52,11 +52,43 @@
             <span id="timezone"></span>
           </div>
         </div>
+
+        <div class="more-btn">
+          <button class="more" id="btn-less-more"> <span id="more-inner">More</span> 
+            <div class="more__icon">
+              <svg class="more-icon" id="more-icon-svg">
+                <use xlink:href="sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+
+          </button>
+        </div>
+
+
       </div>
+
+      <div class="modal">
+        <div class="modal__grid">
+          <div class="modal__left">
+            <div class="modal__subtitle">CURRENT TIMEZONE</div>
+            <div class="modal__info" id="current-timezone">Europe/London</div>
+            <div class="modal__subtitle">Day of the year</div>
+            <div class="modal__info">295</div>
+          </div>
+          <div class="modal__right">
+            <div class="modal__subtitle">Day of the week</div>
+            <div class="modal__info">5</div>
+            <div class="modal__subtitle">Week number</div>
+            <div class="modal__info">42</div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <script src="js/ramdom-phrase.js"></script>
     <script src="js/digital-clock.js"></script>
+    <script src="js/modal-details.js"></script>
     <script src="js/script.js"></script>
   </body>
 
