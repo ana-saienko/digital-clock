@@ -62,4 +62,9 @@
   position: absolute;
   right: 10%;
   bottom: 10%;
+
+  @media (max-width: 1135px){
+     bottom: 3%; 
+     left: 1%;
+  }
 }

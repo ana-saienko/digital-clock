@@ -5,19 +5,31 @@
 
 .modal {
   width: 100%;
-position: absolute;
+  position: absolute;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(40.7742px);
   padding: 74px 165px 32px;
+  left: 0;
+
+  @media (max-width: 1135px) {
+    padding: 35px 65px 0px;
+  }
 }
 
 .modal__left {
   padding-right: 148px;
   border-right: 1px solid #b5b8ba;
+
+  @media (max-width: 980px) {
+    padding-right: 65px;
+  }
 }
 
 .modal__right {
   padding-left: 94px;
+  @media (max-width: 980px) {
+    padding-left: 65px;
+  }
 }
 
 .modal__subtitle {
@@ -28,6 +40,10 @@ position: absolute;
   text-transform: uppercase;
   color: #303030;
   margin-bottom: 9px;
+
+  @media (max-width: 980px) {
+    font-size: 13px;
+  }
 }
 
 .modal__info {
@@ -36,19 +52,21 @@ position: absolute;
   line-height: 68px;
   color: #303030;
   margin-bottom: 42px;
+
+  @media (max-width: 980px) {
+    font-size: 40px;
+  }
 }
 
 .menu__body {
   bottom: -100%;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .menu__body.burger-active {
   bottom: 0;
 }
 
-
 .more.btn-more-active {
-	transform: translateY(-350px);
+  transform: translateY(-350px);
 }
-

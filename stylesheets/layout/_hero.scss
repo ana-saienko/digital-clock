@@ -1,5 +1,7 @@
 .main-screen {
-
+@media (max-width: 1520px){
+    padding: 0 30px;
+}
 }
 /*
 https://www.youtube.com/watch?v=JXHgDS8rIkM
@@ -42,7 +44,7 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   transition: all .3s ease-in;
 
   @media (max-width:$md3+px){
-     padding: 80px 131px 80px 64px; 
+     padding: 32px 26px; 
   }
 
   &.random-none {

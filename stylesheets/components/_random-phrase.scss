@@ -8,6 +8,15 @@
 
   min-height: 150px;
   min-width: 580px;
+
+  @media (max-width: 1135px){
+     min-width: 325px; 
+  }
+
+  @media (max-width:$md3+px){
+     font-size: 12px;
+     min-width: 450px; 
+  }
 }
 
 #random-phrase #quotation {
@@ -19,4 +28,15 @@
 #random-phrase #source {
   font-weight: 700;
   transition: all .3s ease-in-out;
+}
+
+#next-quote {
+  padding-left: 10px;
+}
+
+#timezone {
+  @media (max-width: 980px){
+     font-size: 32px;
+     transform: translateY(-35px); 
+  }
 }
