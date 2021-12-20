@@ -3,6 +3,9 @@
 const iconMore = document.querySelector('.more-icon');
 const btnMore = document.querySelector('.more');
 const menuBody = document.querySelector('.menu__body');
+const randomPhrase = document.querySelector('.top-random-phrase');
+const clocks = document.querySelector('.clocks');
+const moreText = document.getElementById('more-inner');
 
 
 if (btnMore) {
@@ -10,8 +13,11 @@ if (btnMore) {
 		iconMore.classList.toggle('btn-active');
 		menuBody.classList.toggle('burger-active');
 		btnMore.classList.toggle('btn-more-active');
+		clocks.classList.toggle('clocks-active');
+		randomPhrase.classList.toggle('random-none');
 	});
 }
+
 
 // Bottom
 

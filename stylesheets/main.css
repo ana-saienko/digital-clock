@@ -104,6 +104,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  overflow-y: hidden;
 }
 
 body.lock {
@@ -172,12 +173,19 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
       -ms-flex-align: start;
           align-items: start;
   padding: 56px 0;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 @media (max-width: 767.98px) {
   .top-random-phrase {
     padding: 80px 131px 80px 64px;
   }
+}
+
+.top-random-phrase.random-none {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .main-clock__title {
@@ -261,12 +269,19 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
 
 .clocks {
   margin-top: 14%;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 @media (max-width: 767.98px) {
   .clocks {
     padding: 0 64px;
   }
+}
+
+.clocks.clocks-active {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .main-clock__title {
