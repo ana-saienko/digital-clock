@@ -35,7 +35,6 @@ function updateBg() {
      minute: "numeric",
      hour12: true
   });
-  var svgTitle = document.getElementsByClassName("main-clock__title");
   var currentTimeZoneOffsetInHours = now.getTimezoneOffset() / 60;
   if (6 <= hours && hours < 10) {//Morning
      document.write('<body style="background-image: url(images/bg-day.jpg)">');
@@ -63,7 +62,6 @@ function updateBg() {
 }
 
 updateBg();
-
 
 
 
