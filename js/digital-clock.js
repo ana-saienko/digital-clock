@@ -68,8 +68,6 @@ updateBg();
 //CSS gradient backgrounds from https://uigradients.com
 // https://write.corbpie.com/change-background-and-text-based-on-time-with-javascript/
 
-// const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-// console.log(timezone);
 
 // var x = new Date();
 // var currentTimeZoneOffsetInHours = x.getTimezoneOffset() / 60;

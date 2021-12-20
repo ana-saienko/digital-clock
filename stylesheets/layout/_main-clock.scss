@@ -57,9 +57,14 @@
 
 .clocks {
   margin-top: 14%;
+  transition: all .3s ease-in;
 
   @media (max-width:$md3+px){
      padding: 0 64px; 
+  }
+
+  &.clocks-active {
+    transform: translateY(-100%);
   }
 }
 

@@ -1,0 +1,55 @@
+.more {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #808080;
+
+  padding: 15px 9px 15px 21px;
+  background: #ffffff;
+  border-radius: 28px;
+  height: 56px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.more-icon {
+	width: 12px;
+	height: 6px;
+	fill: none;
+	stroke: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.more__icon{
+	margin-left: 13px;
+	width: 40px;
+	height: 40px;
+	background-color: #303030;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.more-icon.btn-active {
+  transform: rotate(180deg);
+}
+
+.more-btn {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
