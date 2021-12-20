@@ -36,10 +36,15 @@ function updateBg() {
      hour12: true
   });
   var currentTimeZoneOffsetInHours = now.getTimezoneOffset() / 60;
+  const modalBg = document.querySelector('.modal');
+  const modalInfo = document.querySelectorAll('.modal__info');
+  const modalSub = document.querySelectorAll('.modal__subtitle');
+
   if (6 <= hours && hours < 10) {//Morning
      document.write('<body style="background-image: url(images/bg-day.jpg)">');
      var svgIcon = "#sun";
      var type = "Good Morning";
+     
   }
   if (10 <= hours && hours < 16) {//Day
      document.write('<body style="background-image: url(images/bg-day.jpg)">');
@@ -50,11 +55,29 @@ function updateBg() {
      document.write('<body style="background-image: url(images/bg-night.jpg)">');
      var svgIcon = "#moon";
      var type = "Good Evening";
-  }
+     modalBg.style.backgroundColor = "rgba(0, 0, 0, 0.75)";
+     modalInfo.forEach(modalInfo => {
+      modalInfo.style.color = "#ffffff";
+   });
+
+   modalSub.forEach(modalSub => {
+    modalSub.style.color = "#ffffff";
+ });
+    
+    }
   if (22 <= hours && hours < 6) {//Night
      document.write('<body style="background-image: url(images/bg-night.jpg)">');
      var svgIcon = "#moon";
      var type = "Good night";
+     modalBg.style.backgroundColor = "rgba(0, 0, 0, 0.75)";
+     modalInfo.forEach(modalInfo => {
+      modalInfo.style.color = "#ffffff";
+   });
+
+   modalSub.forEach(modalSub => {
+    modalSub.style.color = "#ffffff";
+ });
+    s
   }
   document.getElementById("main-clock__title").innerHTML = `<svg class="icon"><use xlink:href="sprite.svg${svgIcon}"></use></svg> ${type}, IT’S CURRENTLY`;
   

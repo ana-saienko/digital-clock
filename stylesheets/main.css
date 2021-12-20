@@ -371,6 +371,10 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   border: 1px solid transparent;
 }
 
+.more:hover .more__icon {
+  background-color: #999999;
+}
+
 .more-icon {
   width: 12px;
   height: 6px;
@@ -395,6 +399,8 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .more-icon.btn-active {
