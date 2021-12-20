@@ -2,11 +2,14 @@
 
 const iconMore = document.querySelector('.more-icon');
 const btnMore = document.querySelector('.more');
+const menuBody = document.querySelector('.menu__body');
 
 
 if (btnMore) {
 	btnMore.addEventListener("click", function(e){
 		iconMore.classList.toggle('btn-active');
+		menuBody.classList.toggle('burger-active');
+		btnMore.classList.toggle('btn-more-active');
 	});
 }
 

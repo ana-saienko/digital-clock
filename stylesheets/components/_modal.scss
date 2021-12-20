@@ -4,11 +4,8 @@
 }
 
 .modal {
-  position: absolute;
   width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
+position: absolute;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(40.7742px);
   padding: 74px 165px 32px;
@@ -39,4 +36,18 @@
   line-height: 68px;
   color: #303030;
   margin-bottom: 42px;
+}
+
+.menu__body {
+  bottom: -100%;
+  transition: all .3s ease-in;
+}
+
+.menu__body.burger-active {
+  bottom: 0;
+}
+
+
+.more.btn-more-active {
+	transform: translateY(-350px);
 }
