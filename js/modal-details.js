@@ -18,6 +18,13 @@ if (btnMore) {
 	});
 }
 
+function changeText() {
+	var el = document.getElementById("more-inner");
+	if (el.innerHTML == "More")
+		 el.innerHTML = "Less";
+	else
+		 el.innerHTML = "More";
+}
 
 // Bottom
 
