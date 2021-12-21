@@ -1,6 +1,11 @@
 .modal__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 745px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .modal {
@@ -14,6 +19,9 @@
   @media (max-width: 1135px) {
     padding: 35px 65px 0px;
   }
+  @media (max-width: 745px) {
+    padding: 48px 26px;
+  }
 }
 
 .modal__left {
@@ -23,12 +31,26 @@
   @media (max-width: 980px) {
     padding-right: 65px;
   }
+  @media (max-width: 745px) {
+    border-right: none;
+    padding-right: 0px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .modal__right {
   padding-left: 94px;
   @media (max-width: 980px) {
     padding-left: 65px;
+  }
+  @media (max-width: 745px) {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -44,6 +66,13 @@
   @media (max-width: 980px) {
     font-size: 13px;
   }
+  @media (max-width: 745px) {
+    font-size: 10px;
+    line-height: 28px;
+  }
+  @media (max-width: 375px) {
+    font-size: 8px;
+  }
 }
 
 .modal__info {
@@ -55,6 +84,14 @@
 
   @media (max-width: 980px) {
     font-size: 40px;
+  }
+  @media (max-width: 745px) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+  @media (max-width: 375px) {
+    font-size: 15px;
   }
 }
 
@@ -69,4 +106,7 @@
 
 .more.btn-more-active {
   transform: translateY(-350px);
+  @media (max-width:$md4+px){
+     transform: translateY(-220px); 
+  }
 }

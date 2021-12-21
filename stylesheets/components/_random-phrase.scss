@@ -15,7 +15,10 @@
 
   @media (max-width:$md3+px){
      font-size: 12px;
-     min-width: 450px; 
+     min-width: auto; 
+  }
+  @media (max-width:$md4+px){
+     min-width: auto; 
   }
 }
 
@@ -35,8 +38,5 @@
 }
 
 #timezone {
-  @media (max-width: 980px){
-     font-size: 32px;
-     transform: translateY(-35px); 
-  }
+
 }

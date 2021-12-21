@@ -9,6 +9,9 @@
   @media (max-width:980px){
      font-size: 18px; 
   }
+  @media (max-width:$md4+px){
+     padding: 0; 
+  }
   
 }
 .main-clock__digits {
@@ -20,6 +23,11 @@
   @media (max-width:980px){
      font-size: 175px; 
   }
+
+  @media (max-width:$md4+px){
+     font-size: 80px; 
+     line-height: 100px;
+  }
 }
 
 #timezone {
@@ -29,8 +37,19 @@
   color: #ffffff;
   transform: translateY(-23px);
 
+  @media (max-width: 980px){
+    font-size: 32px;
+    transform: translateY(-35px); 
+ }
+
   @media (max-width:$md3+px){
      font-size: 32px; 
+  }
+
+  @media (max-width:$md4+px){
+     font-size: 15px; 
+     transform: translateY(-5px); 
+     margin-left: 5px;
   }
 }
 
@@ -65,9 +84,23 @@
     @media (max-width: 1135px){
        transform: translateY(-135%); 
     }
+    @media (max-width:$md4+px){
+       transform: translateY(-45%); 
+    }
+  }
+
+  @media (max-width:$md4+px){
+     padding: 0 30px; 
   }
 }
 
 .main-clock__title {
   padding-left: 25px;
+
+  @media (max-width:$md4+px){
+     font-size: 15px;
+     padding: 0; 
+  }
+
+  
 }

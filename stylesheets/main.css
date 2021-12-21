@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -138,6 +137,12 @@ body.lock {
   }
 }
 
+@media (max-width: 479.98px) {
+  .main-screen {
+    padding: 0;
+  }
+}
+
 /*
 https://www.youtube.com/watch?v=JXHgDS8rIkM
 <!-- SVG References -->
@@ -209,6 +214,12 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   }
 }
 
+@media (max-width: 479.98px) {
+  .main-clock__title {
+    padding: 0;
+  }
+}
+
 .main-clock__digits {
   font-weight: 700;
   font-size: 200px;
@@ -223,6 +234,13 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   }
 }
 
+@media (max-width: 479.98px) {
+  .main-clock__digits {
+    font-size: 80px;
+    line-height: 100px;
+  }
+}
+
 #timezone {
   font-weight: 300;
   font-size: 40px;
@@ -232,9 +250,26 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
           transform: translateY(-23px);
 }
 
+@media (max-width: 980px) {
+  #timezone {
+    font-size: 32px;
+    -webkit-transform: translateY(-35px);
+            transform: translateY(-35px);
+  }
+}
+
 @media (max-width: 767.98px) {
   #timezone {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  #timezone {
+    font-size: 15px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    margin-left: 5px;
   }
 }
 
@@ -291,8 +326,28 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   }
 }
 
+@media (max-width: 479.98px) {
+  .clocks.clocks-active {
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+  }
+}
+
+@media (max-width: 479.98px) {
+  .clocks {
+    padding: 0 30px;
+  }
+}
+
 .main-clock__title {
   padding-left: 25px;
+}
+
+@media (max-width: 479.98px) {
+  .main-clock__title {
+    font-size: 15px;
+    padding: 0;
+  }
 }
 
 .modal__grid {
@@ -300,6 +355,15 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 745px) {
+  .modal__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
 }
 
 .modal {
@@ -318,6 +382,12 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   }
 }
 
+@media (max-width: 745px) {
+  .modal {
+    padding: 48px 26px;
+  }
+}
+
 .modal__left {
   padding-right: 148px;
   border-right: 1px solid #b5b8ba;
@@ -329,6 +399,19 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   }
 }
 
+@media (max-width: 745px) {
+  .modal__left {
+    border-right: none;
+    padding-right: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
 .modal__right {
   padding-left: 94px;
 }
@@ -336,6 +419,18 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
 @media (max-width: 980px) {
   .modal__right {
     padding-left: 65px;
+  }
+}
+
+@media (max-width: 745px) {
+  .modal__right {
+    padding-left: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -355,6 +450,19 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   }
 }
 
+@media (max-width: 745px) {
+  .modal__subtitle {
+    font-size: 10px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal__subtitle {
+    font-size: 8px;
+  }
+}
+
 .modal__info {
   font-weight: 700;
   font-size: 56px;
@@ -366,6 +474,20 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
 @media (max-width: 980px) {
   .modal__info {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 745px) {
+  .modal__info {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal__info {
+    font-size: 15px;
   }
 }
 
@@ -382,6 +504,13 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
 .more.btn-more-active {
   -webkit-transform: translateY(-350px);
           transform: translateY(-350px);
+}
+
+@media (max-width: 479.98px) {
+  .more.btn-more-active {
+    -webkit-transform: translateY(-220px);
+            transform: translateY(-220px);
+  }
 }
 
 .more {
@@ -413,6 +542,14 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   background-color: #999999;
 }
 
+@media (max-width: 479.98px) {
+  .more {
+    font-size: 12px;
+    padding: 13px 4px 13px 17px;
+    line-height: 14px;
+  }
+}
+
 .more-icon {
   width: 12px;
   height: 6px;
@@ -420,6 +557,13 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   stroke: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 479.98px) {
+  .more-icon {
+    width: 10px;
+    height: 5px;
+  }
 }
 
 .more__icon {
@@ -441,6 +585,13 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   transition: all .3s ease-in;
 }
 
+@media (max-width: 479.98px) {
+  .more__icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .more-icon.btn-active {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -456,6 +607,13 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
   .more-btn {
     bottom: 3%;
     left: 1%;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .more-btn {
+    left: 8%;
+    bottom: 5%;
   }
 }
 
@@ -480,7 +638,13 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
 @media (max-width: 767.98px) {
   #random-phrase {
     font-size: 12px;
-    min-width: 450px;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 479.98px) {
+  #random-phrase {
+    min-width: auto;
   }
 }
 
@@ -500,226 +664,3 @@ https://www.youtube.com/watch?v=JXHgDS8rIkM
 #next-quote {
   padding-left: 10px;
 }
-
-@media (max-width: 980px) {
-  #timezone {
-    font-size: 32px;
-    -webkit-transform: translateY(-35px);
-            transform: translateY(-35px);
-  }
-}
-
-/*
-==========================================================
-В Хедере нужно чтобы была такая обертка:
-
-.header__menu
-
-внутри сам бургер 
-
-<div class="icon-menu">
-<span></span>
-<span></span>
-<span></span>
-</div>
-
-и ниже пункты меню, которые уберутся в бургер
-
-nav.menu__body
-  ul
-    li
-      a
-
-*/
-@media (max-width: 767.98px) {
-  .menu__body {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.315);
-    -webkit-transition: left 0.3s ease 0s;
-    transition: left 0.3s ease 0s;
-    overflow: auto;
-  }
-  .menu__body.burger-active {
-    left: 0;
-  }
-  .menu__body::before {
-    content: "";
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background-color: #000;
-  }
-  .header__menu-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 40px;
-  }
-  .header__menu-item {
-    padding: 20px;
-    margin: 20px;
-  }
-}
-
-.icon-menu {
-  display: none;
-}
-
-@media (max-width: 767.98px) {
-  .icon-menu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 30px;
-    height: 18px;
-    cursor: pointer;
-    z-index: 5;
-  }
-  .icon-menu span {
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    top: calc(50% - 1px);
-    left: 0px;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.664);
-  }
-  .icon-menu span:first-child {
-    top: 0px;
-  }
-  .icon-menu span:last-child {
-    top: auto;
-    bottom: 0px;
-  }
-  .icon-menu.burger-active span {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  .icon-menu.burger-active span:first-child {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    top: calc(50% - 1px);
-  }
-  .icon-menu.burger-active span:last-child {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    bottom: calc(50% - 1px);
-  }
-}
-
-/*
-.menu {
-  &__list {
-    @media (min-width: $md3+px) {
-      display: flex;
-      align-items: center;
-    }
-
-    & > li {
-      position: relative;
-      margin: 0px 0px 0px 20px;
-
-      @media (min-width: $md3+px) {
-        padding: 10px 0;
-      }
-    }
-  }
-
-  // верстка самих пунктов меню
-
-  &__link {
-    color: #fff;
-    font-size: 18px;
-  }
-
-  &__sub-list {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #000;
-    padding: 15px;
-    min-width: 200px;
-
-    @media (min-width: $md3+px) {
-      transform: translate(0px, 10%);
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease 0s;
-      pointer-events: none;
-    }
-  }
-
-  &__sub-item {
-    margin: 0px 0px 10px 0px;
-
-    &:last-child {
-      margin: 0;
-    }
-  }
-
-  &__sub-link {
-    color: #fff;
-  }
-
-  &__arrow {
-	  display: none;
-  }
-}
-
-
-==========================================================
-если устройство - ноут или комп, то подменю показывается как обычно при наведении мышкой
-если устройство - телефон, появляется стрелочка, которая переворачивается при клике
-
-
-body._pc .menu__list > li:hover .menu__sub-list {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0px, 0px);
-  pointer-events: all;
-}
-
-body._touch .menu__list > li {
-	display: flex;
-	align-items: center;
-}
-
-body._touch .menu__link {
-	flex: 1 1 auto;
-}
-
-body._touch .menu__arrow {
-	display: block;
-	margin: 0px 0px 0px 5px;
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid #fff;
-	transition: transform 0.3s ease 0s;
-}
-
-body._touch .menu__list > li.active .menu__sub-list {
-	opacity: 1;
-	visibility: visible;
-	transform: translate(0px, 0px);
-	pointer-events: all;
- }
-
- body._touch .menu__list > li.active .menu__arrow {
-	 transform: rotate(-180deg);
- }
-*/

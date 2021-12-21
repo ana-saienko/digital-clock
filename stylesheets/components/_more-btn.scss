@@ -30,6 +30,12 @@
     }
     
   }
+
+  @media (max-width:$md4+px){
+     font-size: 12px; 
+     padding: 13px 4px 13px 17px;
+     line-height: 14px;
+  }
 }
 
 .more-icon {
@@ -38,6 +44,10 @@
 	fill: none;
 	stroke: #fff;
   transition: all 0.3s ease-in-out;
+
+  @media (max-width:$md4+px){
+     width: 10px;height: 5px; 
+  }
 }
 
 .more__icon{
@@ -50,7 +60,10 @@
 	align-items: center;
 	justify-content: center;
   transition: all .3s ease-in;
-
+@media (max-width:$md4+px){
+   width: 32px;
+   height: 32px; 
+}
 
 }
 
@@ -66,5 +79,9 @@
   @media (max-width: 1135px){
      bottom: 3%; 
      left: 1%;
+  }
+  @media (max-width:$md4+px){
+     left: 8%; 
+     bottom: 5%;
   }
 }
