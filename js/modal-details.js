@@ -18,13 +18,13 @@ if (btnMore) {
 	});
 }
 
-function changeText() {
-	var el = document.getElementById("more-inner");
-	if (el.innerHTML == "More")
-		 el.innerHTML = "Less";
-	else
-		 el.innerHTML = "More";
-}
+var readMoreBtn = document.querySelector(".more");
+var readMore = document.querySelector(".span-more");
+
+readMoreBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    readMore.textContent = readMore.textContent === 'More' ? 'Less' : 'More';
+});
 
 // Bottom
 
